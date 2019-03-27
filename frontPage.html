@@ -8,81 +8,133 @@
     <meta name="description" content="breakfast suggestions">
     <meta name="keywords" content="breakfast,recipe,food,health"> <!--Q:does this section help with SEO?-->
     <meta name="author" content="GYT">
-    <!--the page title-->
-    <title>Breakfast Recipes</title>
-    <!--set this so that all hyperlinks will open in new window-->
-    <base target="_blank">
     <!--overall style-->
     <link href="base.css" rel="stylesheet" type="text/css"/>
     <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--the page title-->
+    <title>Breakfast Recipes</title>
   </head>
 
   <body>
+
+    <!--header navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left:180px;">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ingredients">Ingredients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mealPlan">Meal Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- title content -->
-    <div class="titleBlock">
-    <h1>Breakfast Ingredient Options</h1>
-    <div id="FOOD"><b>FOOD</b></div>
-    <a href="https://www.douguo.com/cookbook/1415210.html">
-      <img src="https://cp1.douguo.com/upload/caiku/b/3/e/yuan_b399bd8c302c9734c76ddc4d20298c0e.jpeg" aalt="Title Photo" width=500/>
+    <a href="https://www.douguo.com/cookbook/1415210.html" target="_blank">
+      <img src="https://www.dormero.de/uploads/tx_templavoila/header_fruehstueck_EN.jpg" alt="Title Photo" style="margin-left:160px;">
     </a> <br>
 
-    <!-- insert a script into HTML document -->
-    <script>
-      document.write("Click the image above for recipes")
-    </script>
-    <noscript>Sorry,your browser does not support JavaScript!</noscript>
-
-    <p>
-      <span class="textHighlight">The plan</span> is to eat <del>less</del><ins> healthier</ins>!</p>
-    <p>
-      <a href="#Contact">Contact Us</a>
-    </p>
-    <hr>
+    <div class="titleBlock" style="margin-left:100px;">
+        <a id="ingredients">
+          <h1>Breakfast Ingredient Options</h1>
+          <div id="FOOD"><b>FOOD</b></div>
+          <p>
+            <span class="textHighlight">The plan</span> is to eat <del>less</del><ins> healthier</ins>!</p>
+          <hr>
     </div>
 
     <!--contents in sections -->
-      <h2>Carbs</h2>
-        <p>
-          Oatmeal 30g<br>
-          Sweet Potato 30g <br>
-          Corn 30g<br>
-          Yam 30g<br>
-          Carrots 30g<br>
-          Squash 30g
-        </p>
-      <hr>
+    <div class="sidenav">
+      <a href="#carbs">Carbs</a>
+      <a href="#protein">Protein</a>
+      <a href="#vegetables">Vegetables</a>
+      <a href="#beverages">Beverages</a>
+    </div>
 
-      <h2>Protein</h2>
-        <p>
-          Milk 250ml<br>
-          Soy Milk 250ml<br>
-          Yogurt 200ml<br>
-          Egg 50g<br>
-        </p>
-      <iframe height=498 width=1000 src='http://player.youku.com/embed/XMjg4NDY3OTYyMA=='
+    <div class="main">
+      <a id="carbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+          <h2>Carbs</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
+        </div>
+        <div class ="col-md-4">
+          <h3 style="padding-top:20px">Options</h3>
+          <p>
+            Oatmeal 30g<br>
+            Sweet Potato 30g <br>
+            Corn 30g<br>
+            Yam 30g<br>
+            Carrots 30g<br>
+            Squash 30g
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+      <a id="protein">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+          <h2>Protein</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
+        </div>
+        <div class ="col-md-4">
+          <h3 style="padding-top:20px">Options</h3>
+          <p>
+            Milk 250ml<br>
+            Soy Milk 250ml<br>
+            Yogurt 200ml<br>
+            Egg 50g<br>
+          </p>
+        </div>
+      </div>
+    </div>
+      <iframe style="padding-right:10%;" height=498 width=100% src='http://player.youku.com/embed/XMjg4NDY3OTYyMA=='
       frameborder=0 'allowfullscreen'></iframe>
       <hr>
 
-
-<!--window.__playinfo__={"code":0,"message":"0","ttl":1,"data":{"from":"local","result":"suee","message":"","quality":32,"format":"flv480","timelength":366099,"accept_format":"flv720,flv480,mp4","accept_description":["高清 720P","清晰 480P","流畅 360P"],"accept_quality":[64,32,16],"video_codecid":7,"seek_param":"start","seek_type":"offset","durl":[{"order":1,"length":366099,"size":69130016,"ahead":"EhA=","vhead":"AWQAKf/hAB1nZAAprNlA2D3n//AoACfxAAADA+kAALuADxgxlgEABWjr7PI8","url":"http://upos-hz-mirrorwcsu.acgvideo.com/upgcxcode/18/95/27889518/27889518-1-32.flv?e=ig8euxZM2rNcNbKahwdVhoMM7zdVhwdEto8g5X10ugNcXBlqNxHxNEVE5XREto8KqJZHUa6m5J0SqE85tZvEuENvNC8xNEVE9EKE9IMvXBvE2ENvNCImNEVEK9GVqJIwqa80WXIekXRE9IMvXBvEuENvNCImNEVEua6m2jIxux0CkF6s2JZv5x0DQJZY2F8SkXKE9IB5QK==&deadline=1553469914&gen=playurl&nbs=1&oi=2922764604&os=wcsu&platform=pc&trid=163978196876413d9f003d25f5a4986e&uipk=5&upsig=a09d992d94ecdb7bb9bd0cbd06220634","backup_url":null}]},"session":"620a7f82974c881ca4521d085a80bfa0","videoFrame":{}} -->
-
-
-      <h2>Vegetables</h2>
-        <p>
-        Cucumber 150g<br>
-        Kale 150g<br>
-        Broccoli 150g<br>
-        Lettuce 150g<br>
-        Spinach 150g<br>
-        Tomatos 150g<br>
-        <a href="https://www.xiachufang.com/recipe/85409/">
-          Recommended Recipe</a>
-        </p>
+      <a id="vegetables">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+            <h2>Vegetables</h2>
+            <img src="https://i.ytimg.com/vi/lwpGd3OlC4E/maxresdefault.jpg" width:20px>
+          </div>
+          <div class ="col-md-4">
+            <h3 style="padding-top:20px">Options</h3>
+            <p>
+              Cucumber 150g<br>
+              Kale 150g<br>
+              Broccoli 150g<br>
+              Lettuce 150g<br>
+              Spinach 150g<br>
+              Tomatos 150g<br>
+              <a href="https://www.xiachufang.com/recipe/85409/">
+                Recommended Recipe</a>
+            </p>
+          </div>
+        </div>
+      </div>
       <hr>
 
+      <a id="beverages">
       <h2>Beverages</h2>
         <ul>
           <li>Coffee</li>
@@ -95,9 +147,10 @@
         </ul>
       <hr>
 
+      <a id="mealPlan">
       <h3> Meal Plan</h3>
       <caption><p>Fill in your choices for each day in the table below</p></caption>
-      <table border="1" cellpadding="10">
+      <table class="table" border="1" cellpadding="10">
         <tr>
           <th>Day</th>
           <th>Food </th>
@@ -136,41 +189,51 @@
       <br><br>
 
       <!--Note section-->
-      <img src="http://5b0988e595225.cdn.sohucs.com/images/20180927/687b9dfa618b483dabf791f5970bd1c1.jpeg" width=500/>
+      <div class="container">
+        <div class="row">
 
-      <h3> Drop Us A Note!</h3>
-        <form action="">
-        <fieldset>
-        <legend> Your Note </legend>
-        Username: <input type="text" name="firstname"><br>
-        Password: <input type="password" name="password"><br>
+          <div class="col-md-9">
+            <h3> Drop Us A Note!</h3>
+              <a id="Contact">
+              <form action="">
+              <fieldset>
+              <legend> Your Note </legend>
+              Username: <input type="text" name="firstname"><br>
+              Password: <input type="password" name="password"><br>
 
-        What do you think about our website?<br>
-          <input type="radio" name="like" value="yes">I love it!<br>
-          <input type="radio" name="like" value="no">It can be improved<br>
+              What do you think about our website?<br>
+                <input type="radio" name="like" value="yes">I love it!<br>
+                <input type="radio" name="like" value="no">It can be improved<br>
 
-        Do you have any dietary restrictons?<br>
-        <select name="Diet">
-          <option value="vegetarian">Vegetarian</option>
-          <option value="vegan">Vegan</option>
-          <option value="paleo">Paleo</option>
-          <option value="none" selected>None</option>
-        </select><br>
+              Do you have any dietary restrictons?<br>
+              <select name="Diet">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="paleo">Paleo</option>
+                <option value="none" selected>None</option>
+              </select><br>
 
-        What would you like to let us know:<br>
-        <textarea rows="10" cols="30"> </textarea><br>
+              What would you like to let us know:<br>
+              <textarea rows="10" cols="30"> </textarea><br>
 
-        <input type="checkbox" name="contactme" value="contat">I'd like to be contacted about this message <br>
+              <input type="checkbox" name="contactme" value="contat">I'd like to be contacted about this message <br>
 
-        <input type="button" value="Submit" class="buttons">
-        </fieldset>
-        </form>
+              <input type="button" value="Submit" class="buttons">
+              </fieldset>
+              </form>
+          </div>
+
+          <div class="col-mid-3">
+            <img class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20180927/687b9dfa618b483dabf791f5970bd1c1.jpeg" style="width:40%">
+          </div>
+
+        </div>
+      </div>
 
       <hr>
 
       <!--contact section-->
       <address>
-        <a id="Contact">
         <b>Written by <abbr title = "Gxx Yxx Txx">GYT.</abbr></b> <br>
         <a href="mailto:xxxxx@mail.com
         ?cc=someoneelse@example.com
@@ -181,7 +244,7 @@
         1111 St, XXXX City<br>
         USA
       </address>
-
+    </div>
     </body>
 
 </html>

@@ -4,7 +4,6 @@ body {
   font-size:110%;
   padding:20px;
   border-radius: 10px;
-  border: 5px solid #1E90FF;
 }
 
 h1 {
@@ -17,6 +16,7 @@ h1 {
 h2 {
   color:#31797c;
   font-family:'Aguafina Script';
+  padding-left: 10px;
 }
 
 h3 {
@@ -29,6 +29,18 @@ p,ul,th,td,form {
   font-family:'Advent Pro';
   color:#383838;
   font-size:20px;
+}
+
+p {
+  padding-left:60px;
+}
+
+img{
+  width:90%;
+}
+
+table{
+  margin-right: 20px;
 }
 
 address {
@@ -48,6 +60,42 @@ address {
 }
 
 /*class selector*/
+.sidenav {
+  height: 100%;
+  width: 135px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00baa7;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-family:'Amatic SC';
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .titleBlock {
   text-align:center;
 }
@@ -64,4 +112,8 @@ address {
   font-size:120%;
   height:50px;
   width:200px"
+}
+
+.image{
+  margin: 20px 0px 0px 60px;
 }
