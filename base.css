@@ -1,0 +1,67 @@
+
+
+body {
+  font-size:110%;
+  padding:20px;
+  border-radius: 10px;
+  border: 5px solid #1E90FF;
+}
+
+h1 {
+  font-family:'Advent Pro';
+  font-weight: bold;
+  color:#00baa7;
+  font-size:200%;
+}
+
+h2 {
+  color:#31797c;
+  font-family:'Aguafina Script';
+}
+
+h3 {
+  color:#1E90FF;
+  font-family:'Amatic SC';
+  font-size: 30px;
+}
+
+p,ul,th,td,form {
+  font-family:'Advent Pro';
+  color:#383838;
+  font-size:20px;
+}
+
+address {
+  font-family:"Helvetica";
+  font-size:70%;
+  background-color:#00baa7;
+  color:#ffffff;
+  text-align:center;
+}
+
+/*id selector*/
+#FOOD {
+  color:#ffce3d;
+  font-family:'Sofia';
+  font-size:150%;
+  letter-spacing:12px;
+}
+
+/*class selector*/
+.titleBlock {
+  text-align:center;
+}
+
+.textHighlight {
+  color:#1E90FF;
+  font-weight:bold;
+}
+
+.buttons{
+  background-color:#1E90FF;
+  color:white;
+  font-family: 'Amatic SC';
+  font-size:120%;
+  height:50px;
+  width:200px"
+}
